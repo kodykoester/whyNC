@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Remove all animations, transitions, and smooth scroll for people that prefer not to see them */
+@media all and (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End Reset */
+
+/* Custom styles */
+
+body {
+    margin: .25em;
+    background-color: #f3f3f3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: .25em;
+    text-align: center;
+}
+span {
+  font-weight: 700;
+}
+.icon {
+    margin: 1em;
+    height: 170px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
+    /* outline: solid 1px black; */
+    margin: .25em;
+    text-align: center;
+}
+
+footer {
+  width: 100%;
+    text-align: center;
+    margin: 1em;
+}
+
+
+/* Icon Colors */
+.grave {
+  font-weight: 500;
+}
+.mountain {
+    background-color: #37cc6b;
+}
+.plane {
+    background-color: #a89e9f;
+}
+.temp {
+    background-color: #f89a76;
+}
+.tax {
+    background-color: #ffda88;
+}
+.surf {
+    background-color: #33d6f5;
+}
+.vaca {
+  background-color: #e1f3ff;
+}
+.waterfall {
+    background-color: #97d729;
+}
+.economy {
+  background-color: #ffc431;
+}
+.shoe {
+  background-color: #fb6572;
+}
+.graveyard {
+background-color: #999999;
+}
+.squirrel {
+  background-color: #f1f1f1;
+}
+.research {
+  background-color: #fcd770;
+}
+.history {
+  background-color: #91def5;
+}
+.donut {
+  background-color: #ff5a81;
+}
+.fast {
+  background-color: #8ae7d3;
+}
+.skull {
+  background-color: #000;
+  color: #f1f1f1;
+}
+.beer {
+  background-color: #4d3014;
+  color: #f1f1f1;
+}
+.books {
+  background-color: #b49aca;
+}
+.films {
+  background-color: #8690a6;
+}
+.headquarters {
+  background-color: #26a6fe;
+}
+.fish {
+  background-color: #ff9940;
+}
+.bbq {
+  background-color: #c3ddff;
+}
+.sports {
+  background-color: #a85b4a;
+  color: #f1f1f1;
+}
+.castle {
+  background-color: #669e4f;
+}
+.treasure{
+  background-color: #795648;
+  color: #f1f1f1;
+}
+.trap {
+  background-color:#ff9680;
+}
+.mystery {
+  background-color: #dce1eb;
+}
+.usa {
+  background-color: #61a2f9;
+}
+.mic {
+  background-color: #393a3a;
+  color: #f1f1f1;
+}
+.coffee {
+  background-color: #acc8bc;
+}
+.coffeemug {
+  background-color: #cd8e5e;
+}
+.quality {
+  background-color: #99aecc;
+
+}
+
+
+
+/* Mobile under 400px */
+@media all and (max-device-width: 42em){  
+    .item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 45vh;
+        margin: .25em;
+    }
+    h1 {
+      font-size: .9em; }
+    p {
+      font-size: 1.1em;
+      margin: .35em;
+      max-width: 100%;
+  }
+}
+
+@media all and (min-device-width: 42em){
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    /* max-width: 800px;Ensure two items next to each other with space in between */
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    height: 40vh;
+    margin: .25em;
+}
+h1 {
+  font-size: 2em; }
+
+p {
+    font-size: 1.25em;
+    margin: .35em;
+    max-width: 100%;
+}
+}
+@media all and (min-device-width: 59em) {
+  .top {
+    margin-top: 2.25em;
+  }
+  p {
+    /* font-size: 1.5em; */
+    max-width: 600px;
+}
+}
+@media all and (min-width: 75em) {}
