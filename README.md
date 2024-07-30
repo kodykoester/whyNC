@@ -12,10 +12,6 @@ This is a simple HTML webpage showcasing the many reasons to live and work in No
 
 If you'd like to contribute to this project, feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 Inspired by [Lynn Fisher](https://why.az/) and built by a [Wisconsinite](https://kodykoester.com).
